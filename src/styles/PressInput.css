@@ -1,0 +1,207 @@
+body{
+  margin: 0 auto;
+  position: relative;
+  width: 1280px;
+  height: 720px;
+
+  background: #FFFFFF;
+}
+
+.pic{
+    position: absolute;
+    width: 89px;
+    height: 293px;
+    left: 349px;
+    top: 63px;  
+}
+.transButton{
+    
+    border: none !important;
+    
+
+    filter:Alpha(opacity=0.3);
+    -moz-opacity:0.3;
+    opacity:0.3;
+}
+.c03{
+    position: absolute;
+    width: 221.67px;
+    height: 568.64px;
+    left: 193.48px;
+    top: 72.52px;
+}
+.button1{
+    position: absolute;
+    width: 74px;
+    height: 135px;
+    left: 1053px;
+    top: 585px;
+
+  }
+.button2{
+    position: absolute;
+    width: 73px;
+    height: 135px;
+    left: 1156px;
+    top: 585px;
+    
+}
+.backPrint{
+    position: absolute;
+    width: 682.24px;
+    height: 565.67px;
+    left: 405.76px;
+    top: 74.18px;    
+}
+.buttonTag{
+  background: url(../assets/backbutton1.png) no-repeat;
+}
+.buttonTag1{
+  position: absolute;
+  width: 491.53px;
+  height: 121px;
+  left: 474.91px;
+  top: 173px;
+    
+}
+.buttonTag2{
+  position: absolute;
+  width: 491.53px;
+  height: 121px;
+  left: 474.91px;
+  top: 302px;
+    
+}
+.buttonTag3{
+  position: absolute;
+  width: 491.53px;
+  height: 121px;
+  left: 474.91px;
+  top: 431px;
+    
+}
+.backBlur{
+  position: absolute;
+  width: 1279px;
+  height: 719px;
+  left: 0px;
+  top: 0px;
+  filter:Alpha(opacity=0.5);
+  -moz-opacity:0.5;
+  opacity:0.5;
+}
+.select1{
+  position: absolute;
+  width: 231.53px;
+  height: 30px;
+  left: 494.91px;
+  top: 193px;
+}
+.select2{
+  position: absolute;
+  width: 231.53px;
+  height: 30px;
+  left: 494.91px;
+  top: 322px;
+}
+.select3{
+  position: absolute;
+  width: 231.53px;
+  height: 30px;
+  left: 494.91px;
+  top: 451px;
+}
+.font1{
+  font-family: '方正苏新诗柳楷简体';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  text-align: center;
+
+  color: #000000;
+}
+.poem1{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 361px;
+  top: 68px;
+}
+.poem2{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 463px;
+  top: 68px;
+}
+.poem3{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 565px;
+  top: 68px;
+}
+.poem4{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 667px;
+  top: 68px;
+}
+.poem5{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 768px;
+  top: 68px;
+}
+.poem6{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 868px;
+  top: 68px;
+}
+.poem7{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 284px;
+  top: 378px;  
+}
+.poem8{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 393px;
+  top: 378px;  
+}
+.poem9{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 488px;
+  top: 378px;
+}
+.poem10{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 588px;
+  top: 378px;  
+}
+.poem11{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 690px;
+  top: 378px;
+}
+.poem12{
+  position: absolute;
+  width: 35px;
+  height: 268px;
+  left: 791px;
+  top: 378px;  
+}

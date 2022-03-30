@@ -1,26 +1,29 @@
 import React from "react";
 import ReactDOM from 'react-dom'
-import "./index.css"
-import upside from "./pic/up2.png"
-import background1 from "./pic/0.png"
-import button1 from "./pic/4.png"
-import button2 from "./pic/3.png"
+import "../../styles/index.css"
+//import PressInput from './pressInput.js';
 
-import card1 from "./pic/c1.png"
-import card2 from "./pic/c2.png"
-import card3 from "./pic/c3.png"
-import card4 from "./pic/c4.png"
-import card5 from "./pic/c5.png"
-import card6 from "./pic/c6.png"
-import card7 from "./pic/c7.png"
-import card8 from "./pic/c8.png"
-import card9 from "./pic/c9.png"
-import card10 from "./pic/c10.png"
-import card11 from "./pic/c11.png"
-import card12 from "./pic/c12.png"
+import upside from "../../assets/up2.png"
+import background1 from "../../assets/0.png"
+import button1 from "../../assets/4.png"
+import button2 from "../../assets/3.png"
 
 
-class App extends React.Component{
+import card1 from "../../assets/c1.png"
+import card2 from "../../assets/c2.png"
+import card3 from "../../assets/c3.png"
+import card4 from "../../assets/c4.png"
+import card5 from "../../assets/c5.png"
+import card6 from "../../assets/c6.png"
+import card7 from "../../assets/c7.png"
+import card8 from "../../assets/c8.png"
+import card9 from "../../assets/c9.png"
+import card10 from "../../assets/c10.png"
+import card11 from "../../assets/c11.png"
+import card12 from "../../assets/c12.png"
+
+
+class SelectPage extends React.Component{
 
   //初始化状态
   state = {
@@ -115,7 +118,7 @@ class App extends React.Component{
   }
 }
 
-
+export default SelectPage;
 
 //渲染react元素document.getElementById('root')
-ReactDOM.render(<App/>,document.getElementById('root'))
+//ReactDOM.render(<App/>,document.getElementById('root'))

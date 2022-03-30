@@ -1,0 +1,151 @@
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  width: 1280px;
+  height: 720px;
+
+  background: #F1FFFF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button1{
+  position: absolute;
+  width: 74px;
+  height: 135px;
+  left: 1053px;
+  top: 585px;
+  /*background-image: url(./pic/4.png);*/
+}
+.button2{
+  position: absolute;
+  width: 73px;
+  height: 135px;
+  left: 1156px;
+  top: 585px;
+  display: ;
+}
+.background1{
+  position: relative;
+  width: 1280px;
+  height: 720px;
+}
+.up1{
+  position: absolute;
+  width: 1064.78px;
+  height: 45px;
+  left: 107.61px;
+  top: 0px;
+}
+.c1{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 349px;
+  top: 63px;
+
+}
+.c2{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 451px;
+  top: 63px;
+}
+.c3{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 553px;
+  top: 63px;
+}
+.c4{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 655px;
+  top: 63px;
+}
+.c5{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 757px;
+  top: 63px;  
+}
+.c6{
+  position: absolute;
+  width: 89px;
+  height: 293px;
+  left: 859px;
+  top: 63px;
+}
+.c7{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 272px;
+  top: 368px;
+}
+.c8{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 374px;
+  top: 368px;
+}
+.c9{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 476px;
+  top: 368px;
+}
+.c10{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 578px;
+  top: 368px;
+}
+.c11{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 680px;
+  top: 368px;
+
+}
+.c12{
+  position: absolute;
+  width: 89px;
+  height: 292px;
+  left: 782px;
+  top: 368px;
+}
+.user{
+  position: absolute;
+  margin:0 auto;
+  width: 21px;
+  height: 152px;
+  left: 361px;
+  top: 98px;
+  writing-mode: vertical-lr;
+  -webkit-writing-mode: vertical-lr;
+  table-layout:vertical-ideographic;
+  line-height:24px;
+  font-size:20px;
+  background-color:transparent;
+  border: 1;
+  border-color: white;
+  
+
+}
