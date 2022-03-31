@@ -1,6 +1,5 @@
 import React from 'react'
 import { useSpring, animated } from 'react-spring'
-import { rgb } from 'react-spring/node_modules/@react-spring/shared'
 
 import '../styles/card.module.css'
 
@@ -16,20 +15,28 @@ class Card extends React.Component{
         }
         
     };
+
     handleMouseOver = (e) =>{
-        let data = Object.assign({}, this.state, {width:30,height:30})
+        let data = Object.assign({}, this.state, {width:'20vh',height:'20vh'})
         this.setState(data)
     }
 
     handleMouseOut = (e) =>{
-        let data = Object.assign({}, this.state, {width:this.state.dWidth,height:this.state.dHeight})
+        let data = Object.assign({}, this.state, {width:'10vh',height:'10vh'})
         this.setState(data)
     }
 
     render(){
         return(
             <div>
-                <div style={{width : this.state.width,height : this.state.height,fill:rgb(0,0,0)}}></div>
+                <animated>
+                <button 
+                onMouseOver={this.handleMouseOver.bind(this)}
+                onMouseOut={this.handleMouseOut.bind(this)}
+                style={{width : this.state.width, height : this.state.height}}>
+                    what
+                </button>
+                </animated>
             </div>
         );
     }
