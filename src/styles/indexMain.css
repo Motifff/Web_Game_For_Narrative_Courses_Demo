@@ -1,0 +1,438 @@
+body {
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  width: 1280px;
+  height: 720px;
+
+  background: #F1FFFF;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button1{
+  position: absolute;
+  width: 74px;
+  height: 135px;
+  left: 1053px;
+  top: 585px;
+  /*background-image: url(./pic/4.png);*/
+}
+.button2{
+  position: absolute;
+  width: 73px;
+  height: 135px;
+  left: 1156px;
+  top: 585px;
+}
+.background1{
+  position: relative;
+  width: 1280px;
+  height: 720px;
+}
+.up1{
+  position: absolute;
+  width: 1064.78px;
+  height: 45px;
+  left: 107.61px;
+  top: 0px;
+}
+.c1{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 211.54px;
+  top: 31px;
+
+}
+.c2{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 284.85px;
+  top: 31px;
+}
+.c3{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 355.41px;
+  top: 31px;
+
+}
+.c4{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 430.04px;
+  top: 31px;
+}
+.c5{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 503.9px;
+  top: 31px;
+}
+.c6{
+  position: absolute;
+  width: 60.11px; 
+  height: 194.79px;
+  left: 577.21px;
+  top: 31px;
+}
+.c7{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 650.52px;
+  top: 31px;
+}
+.c8{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 723.83px;
+  top: 31px;
+}
+.c9{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 797.41px;
+  top: 31px;
+}
+.c10{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 870.72px;
+  top: 31px;
+}
+.c11{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 944.03px;
+  top: 31px;
+}
+.c12{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 1017.34px;
+  top: 31px;
+}
+
+
+.c1a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 211.54px;
+  top: 501px;
+
+}
+.c2a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 284.85px;
+  top: 501px;
+}
+.c3a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 355.41px;
+  top: 501px;
+
+}
+.c4a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 430.04px;
+  top: 501px;
+}
+.c5a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 503.9px;
+  top: 501px;
+}
+.c6a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 577.21px;
+  top: 501px;
+
+}
+.c7a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 650.52px;
+  top: 501px;
+}
+.c8a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 723.83px;
+  top: 501px;
+}
+.c9a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 797.41px;
+  top: 501px;
+}
+.c10a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 870.72px;
+  top: 501px;
+}
+.c11a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 944.03px;
+  top: 501px;
+}
+.c12a{
+  position: absolute;
+  width: 60.11px;
+  height: 194.79px;
+  left: 1017.34px;
+  top: 501px;
+}
+
+.font{
+  font-family: '方正苏新诗柳楷简体';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  color: #000000;
+}
+.word1{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 218px;
+  top: 514px;
+  
+}
+.word2{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 291px;
+  top: 514px;
+
+}
+.word3{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 362px;
+  top: 514px;
+
+}
+.word4{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 436px;
+  top: 514px;
+
+}
+.word5{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 510px;
+  top: 514px;
+
+}
+.word6{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 583px;
+  top: 514px;
+
+}
+.word7{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 656px;
+  top: 514px;
+
+}
+.word8{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 730px;
+  top: 514px;
+
+}
+.word9{
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  left: 803px;
+  top: 514px;
+
+}
+.word10{
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  left: 876px;
+  top: 514px;
+
+}
+.word11{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 950px;
+  top: 514px;
+
+}
+.word12{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 1025px;
+  top: 514px;
+
+}
+.word13{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 218px;
+  top: 44px;
+
+}
+.word14{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 291px;
+  top: 44px;
+}
+.word15{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 362px;
+  top: 44px;
+
+}
+.word16{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 436px;
+  top: 44px;
+
+}
+.word17{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 510px;
+  top: 44px;
+
+}
+.word18{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 583px;
+  top: 44px;
+
+}
+.word19{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 656px;
+  top: 44px;
+
+}
+.word20{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 730px;
+  top: 44px;
+
+}
+.word21{
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  left: 803px;
+  top: 44px;
+
+}
+.word22{
+  position: absolute;
+  width: 16px;
+  height: 51px;
+  left: 876px;
+  top: 44px;
+
+}
+.word23{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 950px;
+  top: 44px;
+
+}
+.word24{
+  position: absolute;
+  width: 16px;
+  height: 112px;
+  left: 1025px;
+  top: 44px;
+
+}
+.user{
+  position: absolute;
+  margin: 0 auto;
+  width: 20px;
+  height: 132px;
+  left: 361px;
+  top: 98px;
+  writing-mode: vertical-lr;
+  line-height:24px;
+  font-size:20px;
+  background-color:transparent;
+  border: 1;
+  border-color: white;
+
+}

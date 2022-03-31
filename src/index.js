@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import MainPage from './pages/main-page/index.js';
 import reportWebVitals from './reportWebVitals';
-import SelectPage from './pages/login/index.js';
-import PressInput from './pages/login/pressInput.js';
+//import SelectPage from './pages/login/index.js';
+//import PressInput from './pages/login/pressInput.js';
 
 ReactDOM.render(
-  <body>
-    <SelectPage/>
-    <PressInput/>
-  </body>
+  
+    <MainPage/>
+  
   ,document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
