@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import '../../styles/PressInput.css'
 import img2 from '../../assets/c1.png'
-import Zmage from 'react-zmage'
+//import Zmage from 'react-zmage'
 import "../../styles/index.css"
 import card3 from "../../assets/c3.png"
 import button1 from "../../assets/4.png"

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 import MainPage from './pages/main-page/index.js';
 import reportWebVitals from './reportWebVitals';
@@ -8,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   
-    <MainPage/>
+    <body>
+      <MainPage/>
+    </body>
   
   ,document.getElementById('root'));
 
