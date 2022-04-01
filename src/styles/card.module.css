@@ -1,0 +1,15 @@
+.card {
+    position: relative;
+    background-color: black;
+}
+
+.cardText {
+    width:16px;
+    font-family: '方正苏新诗柳楷简体';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+}

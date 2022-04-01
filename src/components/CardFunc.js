@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/card.module.css'
 
-class Card extends React.Component{
+class CardFunc extends React.Component{
     constructor(props){
         super(props)
         this.state = {
@@ -39,4 +39,4 @@ class Card extends React.Component{
         );
     }
 }
-export default Card;
+export default CardFunc;

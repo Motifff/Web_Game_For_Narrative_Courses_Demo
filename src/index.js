@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SpringCard from './components/SpringCard'
+import CardHolder from './components/CardHolder';
 
 
 
 ReactDOM.render(
-    <SpringCard/>,
+    <body>
+        <CardHolder/>
+    </body>,
     document.getElementById('root')
 );
