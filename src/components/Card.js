@@ -1,44 +1,29 @@
-import React from 'react'
+import React,{ useState } from 'react'
 import { useSpring, animated } from 'react-spring'
 
-import '../styles/card.module.css'
+function Card() {
+    const [isFocus,setFocus] = useState(false);
+    
+    const styles = useSpring({
+        width : isFocus ? '40vh':'vh20',
+        height : isFocus ? '40vh':'vh20'
+    });
 
-class Card extends React.Component{
-    constructor(props){
-        super(props)
-        this.state = {
-            words: "空内容",
-            dWidth: props.w,
-            dHeight: props.h,
-            width: props.w,
-            height:props.h,
-        }
-        
-    };
+    const toggle = () => setFocus(!isFocus);
 
-    handleMouseOver = (e) =>{
-        let data = Object.assign({}, this.state, {width:'20vh',height:'20vh'})
-        this.setState(data)
-    }
-
-    handleMouseOut = (e) =>{
-        let data = Object.assign({}, this.state, {width:'10vh',height:'10vh'})
-        this.setState(data)
-    }
-
-    render(){
-        return(
-            <div>
-                <animated>
-                <button 
-                onMouseOver={this.handleMouseOver.bind(this)}
-                onMouseOut={this.handleMouseOut.bind(this)}
-                style={{width : this.state.width, height : this.state.height}}>
-                    what
-                </button>
-                </animated>
-            </div>
-        );
-    }
+    return(
+        <div>
+            <animated.div style={{
+                width: 80,
+                height: 80,
+                backgroundColor: '#46e891',
+                borderRadius: 16,
+                ...styles,
+            }}>
+            whattt
+            </animated.div>
+            <button onClick={toggle}>aa</button>
+        </div>
+    );
 }
 export default Card;

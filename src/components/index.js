@@ -1,2 +1,3 @@
 export * from './Card';
-export * from './springCard'
+export * from './CardFunc'
+export * from './newTest'
