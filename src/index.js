@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Cat,Position,Result} from './components/newTest'
+import SpringCard from './components/SpringCard'
 
 
 
 ReactDOM.render(
-    <Result/>,
+    <SpringCard/>,
     document.getElementById('root')
 );
