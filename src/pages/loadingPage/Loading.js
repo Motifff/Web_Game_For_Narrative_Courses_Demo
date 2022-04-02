@@ -1,14 +1,14 @@
 import React from "react";
 import Sketch from "react-p5";
-import i0 from "../../assets/01.png"
-import i1 from "../../assets/01line.png"
-import i2 from "../../assets/04.png"
-import i3 from "../../assets/04line.png"
-import i4 from "../../assets/02.png"
-import i5 from "../../assets/02line.png"
-import i6 from "../../assets/03.png"
-import i7 from "../../assets/03line.png"
-import cld from "../../assets/cloud.png"
+import i0 from "../../assets/loadPic/01.png"
+import i1 from "../../assets/loadPic/01line.png"
+import i2 from "../../assets/loadPic/04.png"
+import i3 from "../../assets/loadPic/04line.png"
+import i4 from "../../assets/loadPic/02.png"
+import i5 from "../../assets/loadPic/02line.png"
+import i6 from "../../assets/loadPic/03.png"
+import i7 from "../../assets/loadPic/03line.png"
+import cld from "../../assets/loadPic/cloud.png"
 
 
 

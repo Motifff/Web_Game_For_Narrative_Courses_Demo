@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import { useSpring, animated ,config} from "@react-spring/web";
 import cardStyle from '../styles/card.module.css'
+import testImage from '../assets/cardPic/c1.png'
 
 let scale = 1.3;
 function Card(props){
@@ -11,12 +12,12 @@ function Card(props){
   const size = useSpring({
     from:{
       width:focus ? 89*scale: 89,
-      height:focus ? 292*scale:292,
+      height:focus ? 295*scale:295,
       opacity:dragging? 0:1
     },
     to:{
       width:focus ? (life ? 89: 0) : (life ? 89*scale : 0),
-      height:focus ? 292:292*scale,
+      height:focus ? 295:295*scale,
       opacity:dragging? 1:0
     },
     onRest:() => {
@@ -53,21 +54,32 @@ function Card(props){
     <animated.div
       style={{
         backgroundColor:'#46e891',
-        borderRadius:10,
         margin:life ? 10 : 0,
         ...size
       }}
       draggable = "true"
       onMouseOver={() => setFocus(!focus)}
       onMouseOut={() => setFocus(!focus)}
-      onMouseDown = {() => setDragging(!dragging)}
+      onDragStart = {() => setDragging(!dragging)}
       onDragEnd = {(e) => elimSelf(e)}
     >
       <animated.div
-        className={cardStyle.cardText}
-        style={textSize}
+        style={{
+          zIndex:1,
+          position:'absolute',
+          ...textSize
+        
+        }}
       >
         {props.w}
+      </animated.div>
+      <animated.div
+        style={{
+          ...size,
+          backgroundImage:`url(${testImage})`,
+          backgroundSize:'cover'
+        }}
+      >
       </animated.div>
     </animated.div>
     </div>
