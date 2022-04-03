@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CardHolder from './components/CardHolder';
+import InGame from './pages/gamingPage/inGame'
 
 
 
 ReactDOM.render(
     <body>
-        <CardHolder/>
+        <InGame/>
     </body>,
     document.getElementById('root')
 );

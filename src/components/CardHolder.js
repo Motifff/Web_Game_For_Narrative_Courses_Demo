@@ -30,7 +30,7 @@ class CardHolder extends React.Component{
         }
         )
         return(
-            <div style={{display:"flex",flexDirection:"row",height:292}}>
+            <div style={{display:"flex",flexDirection:"row",height:295}}>
                 {listRender}
             </div>
         )
