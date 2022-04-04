@@ -1,16 +1,16 @@
 import React from 'react'
 import CardHolder from '../../components/CardHolder';
+import DetectZone from '../../components/DetectZone';
 
 function InGame(props){
     return(
-        <div>
-            <div style={{margin:'20px',display:'flex',justifyContent: 'center'}}>
-                <CardHolder/>
+        <div width='100vw' height='100vh' style={{display:'flex',flexDirection:'column'}}>
+            <div style={{height:'30vh',margin:'20px',display:'flex',alignItems:'start',justifyContent: 'center'}}>
+                <CardHolder d='start'/>
             </div>
-            <div style={{width:'100vw',height:'20vh'}}>
-            </div>
-            <div style={{margin:'20px',display:'flex',justifyContent: 'center',bottom:'40px'}}>
-                <CardHolder/>
+            <DetectZone w='40vw' h='40vh'/>
+            <div style={{height:'30vh',margin:'20px',display:'flex',justifyContent: 'center',alignItems:'end'}}>
+                <CardHolder d='end'/>
             </div>
         </div>
     );

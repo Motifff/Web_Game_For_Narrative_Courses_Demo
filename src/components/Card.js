@@ -1,14 +1,14 @@
 import React,{useState} from "react";
 import { useSpring, animated ,config} from "@react-spring/web";
 import cardStyle from '../styles/card.module.css'
-import testImage from '../assets/cardPic/c1.png'
 
 let scale = 1.3;
 function Card(props){
   const [focus, setFocus] = useState(true)
   const [dragging , setDragging] = useState(true)
   const [life, setLife] = useState(true)
- 
+  const [bor,setBor] = useState(true)
+
   const size = useSpring({
     from:{
       width:focus ? 89*scale: 89,
@@ -41,12 +41,37 @@ function Card(props){
     config:config.stiff
   })
 
+  const borderSettings = useSpring({
+    from:{
+      border:bor?'6px solid #F7D94C':'0px solid #E8B647',
+    },
+    to:{
+      border:bor?'0px solid #F7D94C':'6px solid #E8B647',
+    }
+  })
+
+  let area = 300
   const elimSelf = (e) =>{
-    if(e.clientX>500){
+    //console.log(window.outerHeight)
+    //console.log(e.clientY)
+    console.log(props.upDown)
+    if(props.upDown==='start'?(e.clientY<window.outerHeight-area):(e.clientY>area)){
       setLife(!life)
-    }else{
+    }
+    else{
       setDragging(!dragging)
     }
+  }
+
+  const markSelf = (e) =>{
+    props.func(props.w)
+    setFocus(!focus)
+    setBor(false)
+  }
+
+  const demark = () => {
+    setFocus(!focus)
+    setBor(true)
   }
 
   return(
@@ -59,8 +84,8 @@ function Card(props){
         ...size
       }}
       draggable = "true"
-      onMouseOver={() => setFocus(!focus)}
-      onMouseOut={() => setFocus(!focus)}
+      onMouseOver={() => markSelf()}
+      onMouseOut={() => demark()}
       onDragStart = {() => setDragging(!dragging)}
       onDragEnd = {(e) => elimSelf(e)}
     >
@@ -77,7 +102,8 @@ function Card(props){
       <animated.div
         style={{
           ...size,
-          backgroundImage:`url(${testImage})`,
+          ...borderSettings,
+          backgroundImage:`url(${props.image})`,
           backgroundSize:'cover'
         }}
       >
