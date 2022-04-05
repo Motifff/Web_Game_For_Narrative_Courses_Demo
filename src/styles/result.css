@@ -1,0 +1,84 @@
+.win1{
+    position: absolute;
+    width: 314px;
+    height: 130px;
+    left: 484px;
+    top: 56px;
+}
+
+.backBlur{
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+}
+
+.figure{
+    position: absolute;
+    width: 1280px;
+    height: 720px;
+    left: 0px;
+    top: 0px;
+}
+
+.resultBack{
+    position: absolute;
+    width: 793px;
+    height: 406px;
+    left: 253px;
+    top: 209px;
+}
+
+.resultBack1{
+    position: absolute;
+    width: 793px;
+    height: 260px;
+    left: 253px;
+    top: 320px;
+}
+
+.resultWord{
+    position: absolute;
+    width: 282px;
+    height: 93px;
+    left: 502px;
+    top: 222px;    
+}
+
+.container{
+    position: absolute;
+    left: 253px;
+    top: 325px;
+    height: 250px;
+    width: 793px;
+    display: flex;
+    overflow: hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
+    justify-content: space-between;
+    
+}
+
+.page1{
+    width: 75px; 
+    height: 250px;
+    flex-shrink: 0;
+    background: hsl(140deg,50%,50%);
+    margin-right:10px;
+}
+
+.page2{
+    width: 280px; 
+    height: 250px;
+    flex-shrink: 0;
+    background: hsl(210deg,50%,50%);
+    margin-right:10px;
+}
+.page3{
+    width: 280px; 
+    height: 250px;
+    flex-shrink: 0;
+    background: hsl(270deg,50%,50%);
+    margin-right:10px;
+}

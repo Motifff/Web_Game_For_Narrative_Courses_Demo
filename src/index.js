@@ -6,11 +6,13 @@ import MainPage from './pages/main-page/index.js';
 import reportWebVitals from './reportWebVitals';
 //import SelectPage from './pages/login/index.js';
 //import PressInput from './pages/login/pressInput.js';
+//import Loading from './pages/login/Loadingpage.js';
+import Result from './pages/main-page/result';
 
 ReactDOM.render(
   
     <body>
-      <MainPage/>
+      <Result/>
     </body>
   
   ,document.getElementById('root'));
