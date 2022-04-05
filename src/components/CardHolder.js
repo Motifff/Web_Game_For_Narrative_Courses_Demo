@@ -15,6 +15,7 @@ import c12 from '../assets/cardPic/c12.png'
 
 const dict = [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12]
 
+//用了class的方式写的组件 主要原因是state成分比较复杂（just lazy）
 class CardHolder extends React.Component{
     constructor(props){
         super(props)
@@ -44,19 +45,20 @@ class CardHolder extends React.Component{
     }
 
     render(){
-        const listRender = this.state.word.map((item,key)=>
-        {
-            return(
-                <Card 
-                    key={item} w={item} 
-                    elim={this.destroy} 
-                    upDown={this.props.d} 
-                    highlight={item===this.state.lit}
-                    func = {()=>this.mark()}
-                    image = {dict[key]}
-                />
-            );
-        }
+        const listRender = this.state.word.map(
+            (item,key)=>{
+                //map函数来连续创建卡牌
+                return(
+                    <Card 
+                        key={item} w={item} 
+                        elim={this.destroy} 
+                        upDown={this.props.d} 
+                        highlight={item===this.state.lit}
+                        func = {()=>this.mark()}
+                        image = {dict[key]}
+                    />
+                );
+            }
         )
         return(
             <div style={{display:"flex",flexDirection:"row",alignItems:this.props.d,height:'295'}}>
