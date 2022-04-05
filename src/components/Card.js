@@ -103,6 +103,7 @@ function Card(props){
         style={{
           ...size,
           ...borderSettings,
+          boxSizing: 'border-box',
           backgroundImage:`url(${props.image})`,
           backgroundSize:'cover'
         }}
