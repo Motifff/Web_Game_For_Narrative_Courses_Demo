@@ -91,7 +91,7 @@ function Card(props){
           marginRight:life ? 10 : 0,
           ...size
         }}
-        draggable = "true"
+        draggable = {props.canDrag}
         onMouseOver={() => markSelf()}
         onMouseOut={() => demark()}
         onDragStart = {() => setDragging(!dragging)}

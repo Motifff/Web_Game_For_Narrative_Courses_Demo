@@ -57,6 +57,7 @@ class CardHolder extends React.Component{
                         func = {()=>this.mark()}
                         image = {dict[key]}
                         mode = {1}
+                        canDrag = {true}
                     />
                 );
             }

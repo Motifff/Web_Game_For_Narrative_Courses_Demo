@@ -43,7 +43,7 @@ class Win extends React.Component{
     
     static(){
         return(
-         <div>
+         <div style={{zIndex:1}}>
            <img className = 'backBlur' src={backBlur}/>
            <img className = 'figure' src={figure}/>
            <img className = 'win1' src={wining}/>
@@ -58,7 +58,7 @@ class Win extends React.Component{
 
         )
     }
-
+    //这里的drag和mode功能重复了需要改进
     render(){
         const cardsGen = this.props.word.map(
           (item,key) => {
@@ -70,6 +70,7 @@ class Win extends React.Component{
                 func = {()=>this.notUsing}
                 image = {dict[key]}
                 mode = {0}
+                canDrag = {false}
             />)
           }
         )
@@ -77,24 +78,24 @@ class Win extends React.Component{
             <div> 
               <div style={{height:720,width:1280,backgroundImage:`url(${backPic})`}}></div> 
                 {this.static()}
-              <div 
-                style={{
-                  position: 'absolute',
-                  left: '253px',
-                  top: '325px',
-                  height: '295px',
-                  width: '793px',
-                  display: 'flex',
-                  overflow: 'hidden',
-                  overflowY:'auto',
-                  justifyContent: 'space-between',
-                  flexDirection:"row",
-                  alignItems:'start'
-                }} 
-                onWheel={this.yWheel}
-              >
-                {cardsGen}
-              </div>
+                <div 
+                  style={{
+                    position: 'absolute',
+                    left: '253px',
+                    top: '325px',
+                    height: '350px',
+                    width: '793px',
+                    display: 'flex',
+                    overflow: 'hidden',
+                    overflowY:'auto',
+                    justifyContent: 'space-between',
+                    flexDirection:"row",
+                    alignItems:'start'
+                  }} 
+                  onWheel={this.yWheel}
+                >
+                  {cardsGen}
+                </div>
             </div>
 
         )
