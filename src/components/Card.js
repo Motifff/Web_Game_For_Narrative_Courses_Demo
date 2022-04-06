@@ -58,13 +58,14 @@ function Card(props){
   let area = 300
   //很简答就是在在结束后元件自杀
   const elimSelf = (e) =>{
-    console.log(props.upDown)
     //检测元件位置 拖动出区域后就
-    if(props.upDown==='start'?(e.clientY<window.outerHeight-area):(e.clientY>area)){
-      setLife(!life)
-    }
-    else{
-      setDragging(!dragging)
+    if (props.mode ===1){
+      if(props.upDown==='start'?(e.clientY<window.outerHeight-area):(e.clientY>area)){
+        setLife(!life)
+      }
+      else{
+        setDragging(!dragging)
+      }
     }
   }
 
@@ -79,7 +80,7 @@ function Card(props){
     setFocus(!focus)
     setBor(true)
   }
-
+  console.log('rendered');
   //start to render here
   return(
     <div className={cardStyle.Card}>

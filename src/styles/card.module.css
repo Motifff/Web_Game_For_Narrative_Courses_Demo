@@ -13,3 +13,15 @@
     text-align: center;
     color: #000000;
 }
+.container{
+    position: absolute;
+    left: 253px;
+    top: 325px;
+    height: 250px;
+    width: 793px;
+    display: flex;
+    overflow: hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
+    justify-content: space-between;  
+}

@@ -56,6 +56,7 @@ class CardHolder extends React.Component{
                         highlight={item===this.state.lit}
                         func = {()=>this.mark()}
                         image = {dict[key]}
+                        mode = {1}
                     />
                 );
             }
