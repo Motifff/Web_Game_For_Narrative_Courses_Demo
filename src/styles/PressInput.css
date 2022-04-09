@@ -17,11 +17,10 @@ body{
 .transButton{
     
     border: none !important;
-    
-
     filter:Alpha(opacity=0.3);
     -moz-opacity:0.3;
-    opacity:0.3;
+    opacity:0.1;
+    
 }
 .c03{
     position: absolute;
@@ -30,9 +29,20 @@ body{
     left: 193.48px;
     top: 72.52px;
 }
+.button0{
+  position: absolute;
+  border: 0px;
+  width: 80px;
+  height: 43px;
+  left: 980px;
+  top: 510px;
+  background-image: url("../assets/2.png");
+  
+
+}
 .button1{
     position: absolute;
-    width: 74px;
+    width: 73px;
     height: 135px;
     left: 1053px;
     top: 585px;
@@ -112,11 +122,11 @@ body{
   top: 451px;
 }
 .font1{
-  font-family: '方正苏新诗柳楷简体';
+  font-family: '方正聚珍新仿简体';
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 25px;
+  font-size: 24px;
+  line-height: 30px;
   text-align: center;
 
   color: #000000;
@@ -204,4 +214,243 @@ body{
   height: 268px;
   left: 791px;
   top: 378px;  
+}
+.new1{
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  left: 0px;
+  top: 0px; 
+}
+.blur{
+  position: absolute;
+  left: 0px;
+  top: 0px; 
+  width: 1280px; 
+  height: 720px;
+  background: rgb(204, 204, 204);
+  opacity: 60%;
+}
+.new2{
+  position: absolute;
+  width: 1280px;
+  height: 720px;
+  left: 0px;
+  top: 0px; 
+  opacity: 40%;
+}
+.buttonFont{
+  font-family: '方正聚珍新仿简体';
+  font-style: normal;
+  font-weight: 170;
+  font-size: 24px;
+  line-height: 25px;
+}
+.wordList{
+  font-family: '方正聚珍新仿简体';
+  font-style: normal;
+  font-weight: 170;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.buttonPos1{
+  position: absolute;
+  left: 1175px;
+  top: 482px; 
+}
+.buttonPos2{
+  position: absolute;
+  left: 1175px;
+  top: 540px; 
+}
+.buttonPos3{
+  position: absolute;
+  font-size: 40px;
+  line-height: 57px;
+  width: 30px;
+
+  left: 150px;
+  top: 140px; 
+}
+
+.buttonP1{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 310px;
+  top: 520px; 
+}
+.buttonP2{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 420px;
+  top: 520px; 
+}
+.buttonP3{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 530px;
+  top: 520px; 
+}
+.buttonP4{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 640px;
+  top: 520px; 
+}
+.buttonP5{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 750px;
+  top: 520px; 
+}
+.buttonP6{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 860px;
+  top: 520px; 
+}
+.buttonP7{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 970px;
+  top: 520px; 
+}
+.buttonP8{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 1105px;
+  top: 115px; 
+}
+.buttonP9{
+  position: absolute;
+  width: 60px;
+  height: 40px;
+  left: 1170px;
+  top: 558px; 
+}
+
+
+
+.buttonImg1{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 300px;
+  top: 510px; 
+}
+.buttonImg2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 410px;
+  top: 510px; 
+}
+.buttonImg3{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 520px;
+  top: 510px; 
+}
+.buttonImg4{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 630px;
+  top: 510px; 
+}
+.buttonImg5{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 740px;
+  top: 510px; 
+}
+.buttonImg6{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 850px;
+  top: 510px; 
+}
+.buttonImg7{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 960px;
+  top: 510px; 
+}
+
+.new3{
+  position: absolute;
+  width: 146px;
+  height: 477px;
+  left: 100px;
+  top: 120px; 
+}
+.new{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 1090px;
+  top: 100px; 
+}
+
+.wordPos1{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 310px;
+  top: 150px; 
+}
+.wordPos2{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 420px;
+  top: 150px; 
+}
+.wordPos3{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 530px;
+  top: 150px; 
+}
+.wordPos4{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 640px;
+  top: 150px; 
+}
+.wordPos5{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 750px;
+  top: 150px; 
+}
+.wordPos6{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 860px;
+  top: 150px; 
+}
+.wordPos7{
+  position: absolute;
+  width: 30px;
+  height: 477px;
+  left: 970px;
+  top: 150px; 
 }

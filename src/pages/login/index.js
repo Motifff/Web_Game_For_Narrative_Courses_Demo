@@ -98,15 +98,7 @@ class SelectPage extends React.Component{
             <div style={{height:720,width:1280,backgroundImage:`url(${background1})`}}></div>
             {this.cards()}
             
-            <div>
-
-              <input className='user' type='text' placeholder="输入" value = {userName} name = 'userName'
-              onChange={this.addComment}/>
-              <br/>
-              <button onClick={this.upload}>你的诗词</button>
-            </div>
             
-            {this.renderList()}
             <img className = 'up1' src={upside}/>
             <img className = 'button1' src={button1}/>
             <img className = 'button2' src={button2}/>

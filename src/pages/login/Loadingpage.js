@@ -6,10 +6,12 @@ import "../../styles/Loadingpage.css"
 //import PressInput from './pressInput.js';
 
 import background1 from "../../assets/0.png"
-import block1 from "../../assets/3.png"
+import block1 from "../../assets/5.png"
 import block2 from "../../assets/block2.png"
 import block3 from "../../assets/block3.png"
 import block5 from "../../assets/block6.png"
+import block4 from "../../assets/6.png"
+import block6 from "../../assets/7.png"
 //import loadingText from "../../assets/"
    
 class Loading extends React.Component{
@@ -55,8 +57,9 @@ class Loading extends React.Component{
        return(
           <div>
              <div style={{height:720,width:1280,backgroundImage:`url(${background1})`}}></div> 
-
-             <img className = 'block' src={block1} img/>
+             <img className = 'block' src={block4} img/>
+             
+             <img className = 'block' src={block6} img/>
              
 
              <div className='progress-box'>
@@ -64,7 +67,7 @@ class Loading extends React.Component{
                     <span>{this.state.percentage}%</span>
                     <div className='progress-bg' style={{ width: this.state.progressValue}}></div>
                 </div>
-                <button onClick={this.handleBtn}>安装</button>
+                <button className="tryPos"  onClick={this.handleBtn}>安装</button>
              </div>
              {this.loadingElement()}
           </div>

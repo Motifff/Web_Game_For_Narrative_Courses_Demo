@@ -8,11 +8,26 @@ import card3 from "../../assets/c3.png"
 import button1 from "../../assets/4.png"
 import backPrint1 from "../../assets/back1.png"
 import backBlur from "../../assets/backblur.jpg"
+import new1 from "../../assets/new1.png"
+import new2 from "../../assets/new2.png"
+import wen from "../../assets/5.png"
+import new3 from "../../assets/new.png"
+import buttonFalse from "../../assets/newring.png"
+import buttonTrue from "../../assets/newring2.png"
+
 
 
 class PressInput extends Component {
     state={
         judge : false,
+
+        judge1: false,
+        judge2: false,
+        judge3: false,
+        judge4: false,
+        judge5: false,
+        judge6: false,
+        judge7: false,
         poem : [
             {id:1,value:''},
             {id:2,value:''},
@@ -28,6 +43,25 @@ class PressInput extends Component {
             {id:12,value:''},
         ],
         number : null,
+        
+        comments:[
+            {id: 1,name: '百日衣衫尽'},
+            {id: 2,name: '一二三四歌'},
+            {id: 3,name: '远上寒山石经斜'}
+        ],//评论人
+        userName:'',
+        //评论内容
+        
+        wordList:[
+            {id: 1,content: '两个黄鹂鸣翠柳'},
+            {id: 2,content: '一行白鹭上青天'},
+            {id: 3,content: '三个黄鹂鸣翠柳'},
+            {id: 4,content: '四个黄鹂鸣翠柳'},
+            {id: 5,content: '五个黄鹂鸣翠柳'},
+            {id: 6,content: '六个黄鹂鸣翠柳'},
+            {id: 7,content: '七个黄鹂鸣翠柳'},
+        ],
+
     }
     clickPage = () =>{
         const {judge} = this.state
@@ -122,6 +156,76 @@ class PressInput extends Component {
             judge : false
         })
     }
+    judgeClicker1 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        this.setState({
+            judge1 : true,judge3 :false,judge4 :false,judge5 :false,judge6 :false,judge7 :false,
+            judge2 : false,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "两个黄鹂鸣翠柳"}:item)
+
+        })
+    }
+    judgeClicker2 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        this.setState({
+            judge1 : false,judge3 :false,judge4 :false,judge5 :false,judge6 :false,judge7 :false,
+            judge2 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "一行白鹭上青天"}:item)
+        })
+    }
+    judgeClicker3 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        
+        this.setState({
+            judge1 : false,judge2 :false,judge4 :false,judge5 :false,judge6 :false,judge7 :false,
+            judge3 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "三行白鹭上青天"}:item)
+        })
+    }
+    judgeClicker4 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        
+        this.setState({
+            judge1 : false,judge2 :false,judge3 :false,judge5 :false,judge6 :false,judge7 :false,
+            judge4 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "四行白鹭上青天"}:item)
+        })
+    }
+    judgeClicker5 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        
+        this.setState({
+            judge1 : false,judge2 :false,judge3 :false,judge4 :false,judge6 :false,judge7 :false,
+            judge5 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "五行白鹭上青天"}:item)
+        })
+    }
+    judgeClicker6 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        
+        this.setState({
+            judge1 : false,judge2 :false,judge3 :false,judge4 :false,judge5 :false,judge7 :false,
+            judge6 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "六行白鹭上青天"}:item)
+        })
+    }
+    judgeClicker7 = () =>{
+        const {number} = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
+        
+        this.setState({
+            judge1 : false,judge2 :false,judge3 :false,judge4 :false,judge5 :false,judge6 :false,
+            judge7 : true,
+            poem : poem.map((item,key)=>item.id == number?{...item,name: "七行白鹭上青天"}:item)
+        })
+    }
+    
 
     clickBackpoem = () =>{
         const {judge,number} = this.state
@@ -174,30 +278,107 @@ class PressInput extends Component {
     }*/
 
     renderImage(){
+        const number = this.state
+        const poem = [...this.state.poem];   //浅拷贝一下
         return this.state.judge === true
-                   
-                  ?(<ul >
-                      <img className = 'backBlur' src={backBlur}/>
-                      <img className = 'c03' src={card3}/>
-                      <img className = 'button1' src={button1}/>
-                      <img className = 'backPrint' src={backPrint1}/>
-
-                      <div className='buttonTag'>
-                        <button onClick={this.clickBackpoem} className = 'buttonTag1' ></button>
-                        <button onClick={this.clickBackpoem1} className = 'buttonTag2' ></button>
-                        <button onClick={this.clickBackpoem2} className = 'buttonTag3' ></button>
+                   //点击进入弹窗之后的组件
+                  ?(<div>
+                      <div className='blur'/>
+                      <img className='new2' src={wen}/>
+                      <img className='new1' src={new1}/>
+                      <img className='new3' src={new2}/>
+                      <img className='new' src={new3}/>
+                      
+                      <div className='buttonFont'>
+                         <p className='buttonPos1'>推荐</p>
+                         <p className='buttonPos2'>确认</p>
+                         
                       </div>
-                      <div className = 'font1'>
-                         <div className= 'select1'>两个黄鹂鸣翠柳</div> //内容需要可调换  要解决不能点击的问题
-                         <div className= 'select2'>一行白鹭上青天</div>
-                         <div className= 'select3'>孤帆远影碧空尽</div>
+                      <div className='wordList'>
+                          <p className='buttonPos3'>选择诗词卡牌</p>
+                          {this.state.wordList.map(item =>(
+                            <li key={item.id}>
+                              <p className= {'wordPos'+item.id}>{item.content}</p>
+                            </li>
+                          ))
+                          }
+                   
+                      </div>
+                    
+                      <div className='buttonImage'>
+                          <img className='buttonImg1' src={buttonFalse}/>
+                          <img className='buttonImg2' src={buttonFalse}/>
+                          <img className='buttonImg3' src={buttonFalse}/> 
+                          <img className='buttonImg4' src={buttonFalse}/> 
+                          <img className='buttonImg5' src={buttonFalse}/> 
+                          <img className='buttonImg6' src={buttonFalse}/> 
+                          <img className='buttonImg7' src={buttonFalse}/>  
+
+                      </div>
+                      <div className='transButton'>
+                          <button onClick={this.judgeClicker1} className= 'buttonP1'></button>
+                          <button onClick={this.judgeClicker2} className= 'buttonP2'></button>
+                          <button onClick={this.judgeClicker3} className= 'buttonP3'></button>
+                          <button onClick={this.judgeClicker4} className= 'buttonP4'></button>
+                          <button onClick={this.judgeClicker5} className= 'buttonP5'></button>
+                          <button onClick={this.judgeClicker6} className= 'buttonP6'></button>
+                          <button onClick={this.judgeClicker7} className= 'buttonP7'></button>
+                          <button onClick={this.clickBack} className= 'buttonP8'></button>
+                          <button onClick={this.clickBack} className= 'buttonP9'></button>
                       </div>
                       
-                      <div className='transButton'>
-                        <button onClick={this.clickBack} className = 'button1' ></button>
-                        
-                      </div>
-                  </ul>)
+                      {this.state.judge1 === true
+                            ?(<div>
+                                <img className='buttonImg1' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge2 === true
+                            ?(<div>
+                                <img className='buttonImg2' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge3 === true
+                            ?(<div>
+                                <img className='buttonImg3' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge4 === true
+                            ?(<div>
+                                <img className='buttonImg4' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge5 === true
+                            ?(<div>
+                                <img className='buttonImg5' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge6 === true
+                            ?(<div>
+                                <img className='buttonImg6' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+                      {this.state.judge7 === true
+                            ?(<div>
+                                <img className='buttonImg7' src={buttonTrue}/>
+                              </div> 
+                            )
+                            :(<div></div>)
+                      }
+
+                    </div>)
+                    //没有进入弹窗的组件
                   :this.transButton()
       }
     transButton(){
@@ -218,6 +399,40 @@ class PressInput extends Component {
           </div>
         )
     }
+
+    addComment = (e) => {
+        const {name , value} = e.target
+        this.setState({
+          [name]:value
+        })
+      }
+    
+    upload = () =>{
+        const {comments,userName} = this.state
+    
+        const newComments = [{
+          id:Math.random(),
+          name:userName},...comments]
+        
+        
+        this.setState({
+          comments : newComments
+        })
+        console.log(comments)  
+    }
+
+    /*inPut(){
+        const {userName} = this.state
+        return this.state.judge === true
+            ?(<div>
+
+              <textarea className='user' type='text' placeholder="输入你的诗词" value = {userName} name = 'userName'
+              onChange={this.addComment}/>
+              <br/>
+              <button onClick={this.upload}>你的诗词</button>
+            </div>)
+            :(<img src=' ' className=''></img>)
+    }*/
     monitor(){
         return(<ul>
             {
@@ -236,6 +451,7 @@ class PressInput extends Component {
             this.state.poem.map(item =>(
               <li key={item.id}>
                 <p className={'poem'+item.id}>{item.name}</p>
+                
               </li>
               ))}    
           </div>
@@ -249,7 +465,7 @@ class PressInput extends Component {
              {this.display()}
              {this.renderImage()}
              {this.monitor()}
-             
+             {/*this.inPut()*/}            
            </div>
 		);
 	}
