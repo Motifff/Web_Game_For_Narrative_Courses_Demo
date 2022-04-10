@@ -9,7 +9,7 @@ function Card(props){
   const [dragging , setDragging] = useState(true)
   const [life, setLife] = useState(true)
   //bor stand for border
-  const [bor,setBor] = useState(true)
+
   //UseSpring 是一个动画库 from是动画开始的常数， to是动画结束常数
   const size = useSpring({
     from:{
@@ -26,7 +26,7 @@ function Card(props){
     //这个是动画结束后调用的返回函数
     onRest:() => {
       if(!life){
-        props.elim(props.w)
+        props.destroy(props.w,props.num)
       }
     }
   })
@@ -48,10 +48,11 @@ function Card(props){
 
   const borderSettings = useSpring({
     from:{
-      border:bor?'6px solid #F7D94C':'0px solid #E8B647',
+      border:props.border?'0px solid #F7D94C':'6px solid #E8B647',
     },
     to:{
-      border:bor?'0px solid #F7D94C':'6px solid #E8B647',
+      
+      border:props.border?'6px solid #F7D94C':'0px solid #E8B647',
     }
   })
 
@@ -68,19 +69,16 @@ function Card(props){
       }
     }
   }
-
   //这里是一个预留的方法用于告诉 cardHolder 我正在被玩家注视 这些需要告诉服务器，来高亮对方的选择
-  const markSelf = (e) =>{
-    props.func(props.w)
+  const markSelf = () =>{
+    props.mark(props.w,props.num)
     setFocus(!focus)
-    setBor(false)
   }
   //与以上相反
   const demark = () => {
     setFocus(!focus)
-    setBor(true)
   }
-  console.log('rendered');
+  
   //start to render here
   return(
     <div className={cardStyle.Card}>
@@ -102,7 +100,6 @@ function Card(props){
             zIndex:1,
             position:'absolute',
             ...textSize
-          
           }}
         >
           {props.w}

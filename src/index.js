@@ -2,12 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import WinPage from './pages/winPage/WinPage'
 import InGame from './pages/gamingPage/inGame'
+import Loading from './pages/loadingPage/Loading'
 
 
 
 ReactDOM.render(
     <body>
-        <WinPage word={['测试1','测试2','测试3','测试4','测试5','测试6','测试1','测试2','测试3','测试4','测试5','测试6']}/>
+        <InGame/>
     </body>,
     document.getElementById('root')
 );
