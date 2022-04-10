@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import WinPage from './pages/winPage/WinPage'
-import InGame from './pages/gamingPage/inGame'
+//import InGame from './pages/gamingPage/inGame'
 import Loading from './pages/loadingPage/Loading'
 
 
 
 ReactDOM.render(
     <body>
-        <InGame/>
+        <WinPage/>
     </body>,
     document.getElementById('root')
 );

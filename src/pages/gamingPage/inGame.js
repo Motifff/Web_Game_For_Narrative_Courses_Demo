@@ -3,6 +3,8 @@ import CardHolder from '../../components/CardHolder';
 import DetectZone from '../../components/DetectZone';
 import axios from 'axios';
 
+import '../../styles/addication.css'
+
 import c1 from '../../assets/cardPic/c1.png'
 import c2 from '../../assets/cardPic/c2.png'
 import c3 from '../../assets/cardPic/c3.png'
@@ -16,18 +18,26 @@ import c10 from '../../assets/cardPic/c10.png'
 import c11 from '../../assets/cardPic/c11.png'
 import c12 from '../../assets/cardPic/c12.png'
 
+import backNew1 from '../../assets/winPic/backNew1.png'
+import card1 from '../../assets/winPic/card1.png'
+import backNew2 from '../../assets/winPic/backNew2.png'
+import player1 from '../../assets/winPic/player1.png'
+import player2 from '../../assets/winPic/player2.png'
+
 
 class InGame extends React.Component{
     constructor(props){
         super(props)
         this.state={
             word:[
-                ['测试1', '测试2', '测试3', '测试4', '测试5', '测试6'], 
-                ['测试1', '测试2', '测试3', '测试4', '测试5', '测试6']
+                ['一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天','一行白鹭上青天', 
+                '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天', '一行白鹭上青天'], 
+                ['两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳',
+                '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳', '两个黄鹂鸣翠柳']
             ],
             image:[
-                [c1,c2,c3,c4,c5,c6],
-                [c7,c8,c9,c10,c11,c12]
+                [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12],
+                [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12]
             ],
             isHighlight:true,
             Order:0,
@@ -101,7 +111,14 @@ class InGame extends React.Component{
 
     render(){
         return(
+            <div> 
+            <div style={{backgroundImage: `url(${backNew1})`}}></div>
+            <img className='card1' src={card1}></img>
+            <img className='backNew2' src={backNew2}></img>
+            <img className='player1' src={player1}></img>
+            <img className='player2' src={player2}></img>
             <div width='100vw' height='100vh' style={{display:'flex',flexDirection:'column'}}>
+                
                 <div style={{height:'30vh',display:'flex',alignItems:'start',justifyContent: 'center'}}>
                     <CardHolder   
                         num = {0}
@@ -128,6 +145,7 @@ class InGame extends React.Component{
                         image = {this.state.image[1]}
                         d='end'/>
                 </div>
+            </div>
             </div>
         )
     }
