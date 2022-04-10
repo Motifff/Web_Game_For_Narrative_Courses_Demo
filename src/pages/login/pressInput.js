@@ -379,7 +379,13 @@ class PressInput extends Component {
 
                     </div>)
                     //没有进入弹窗的组件
-                  :this.transButton()
+                  :(<div>
+                      <img className='buttonPos4' src={new3}/>
+                      <div className='transButton'>
+                        <button onClick={console.log('button')} className='buttonPos4'></button>
+                      </div>
+                      {this.transButton()}
+                   </div>)
       }
     transButton(){
         return(
@@ -397,6 +403,7 @@ class PressInput extends Component {
             <button onClick={this.clickPage11}  className = 'c11' ></button>
             <button onClick={this.clickPage12}  className = 'c12' ></button>
           </div>
+          
         )
     }
 

@@ -47,90 +47,273 @@ code {
 }
 .c1{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 349px;
-  top: 63px;
-
+  width: 92.69px;
+  height: 288.77px;
+  left: 8.14%;
+  top: 8.5%;
+}
+.b1{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 10.1%;
+  top: 6%;
+}
+.d1{
+  position: absolute;
+  left: 11.15%;
+  top: 4%;
 }
 .c2{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 451px;
-  top: 63px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 17.91%;
+  top: 8.5%;
+}
+.b2{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 19.87%;
+  top: 6%;
+}
+.d2{
+  position: absolute;
+  left: 20.92%;
+  top: 4%;
 }
 .c3{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 553px;
-  top: 63px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 27.68%;
+  top: 8.5%;
+}
+.b3{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 29.64%;
+  top: 6%;
+}
+.d3{
+  position: absolute;
+  left: 30.69%;
+  top: 4%;
 }
 .c4{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 655px;
-  top: 63px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 37.45%;
+  top: 8.5%;
+}
+.b4{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 39.41%;
+  top: 6%;
+}
+.d4{
+  position: absolute;
+  left: 40.46%;
+  top: 4%;
 }
 .c5{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 757px;
-  top: 63px;  
+  width: 92.69px;
+  height: 288.77px;
+  left: 47.22%;
+  top: 8.5%;
+}
+.b5{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 49.18%;
+  top: 6%;
+}
+.d5{
+  position: absolute;
+  left: 50.23%;
+  top: 4%;
 }
 .c6{
   position: absolute;
-  width: 89px;
-  height: 293px;
-  left: 859px;
-  top: 63px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 56.99%;
+  top: 8.5%;
+}
+.b6{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 58.95%;
+  top: 6%;
+}
+.d6{
+  position: absolute;
+  left: 60%;
+  top: 4%;
 }
 .c7{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 272px;
-  top: 368px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 8.14%;
+  top: 54.65%;
+}
+.b7{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 10.1%;
+  top: 52.15%;
+}
+.d7{
+  position: absolute;
+  left: 11.15%;
+  top: 50.15%;
 }
 .c8{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 374px;
-  top: 368px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 17.91%;
+  top: 54.65%;
+}
+.b8{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 19.87%;
+  top: 52.15%;
+}
+.d8{
+  position: absolute;
+  left: 20.92%;
+  top: 50.15%;
 }
 .c9{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 476px;
-  top: 368px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 27.68%;
+  top: 54.65%;
+}
+.b9{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 29.64%;
+  top: 52.15%;
+}
+.d9{
+  position: absolute;
+  left: 30.69%;
+  top: 50.15%;
 }
 .c10{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 578px;
-  top: 368px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 37.45%;
+  top: 54.65%;
+}
+.b10{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 39.41%;
+  top: 52.15%;
+}
+.d10{
+  position: absolute;
+  left: 39.86%;
+  top: 50.15%;
 }
 .c11{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 680px;
-  top: 368px;
-
+  width: 92.69px;
+  height: 288.77px;
+  left: 47.22%;
+  top: 54.65%;
+}
+.b11{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 49.18%;
+  top: 52.15%;
+}
+.d11{
+  position: absolute;
+  left: 49.68%;
+  top: 50.15%;
 }
 .c12{
   position: absolute;
-  width: 89px;
-  height: 292px;
-  left: 782px;
-  top: 368px;
+  width: 92.69px;
+  height: 288.77px;
+  left: 56.99%;
+  top: 54.65%;
 }
+.b12{
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  left: 58.95%;
+  top: 52.15%;
+}
+.d12{
+  position: absolute;
+  left: 59.4%;
+  top: 50.15%;
+}
+
+.back2{
+  position: absolute;
+  width: 1200px;
+  height: 680px;
+  left:40px;
+  top: 20px;
+}
+
+.rightTag{
+  position: absolute;
+  width: 115.73px;
+  height: 377.32px;
+  left: 81.5%;
+  top: 8.68%;
+}
+
+.wordA{
+  position: absolute;
+  width: 76.86px;
+  height: 324.92px;
+  left: 70.66%;
+  top: 13.49%;
+}
+
+.button4{
+  position: absolute;
+  width:190px;
+  height:194px;
+  left: 73.41%;
+  top: 65.14%;
+}
+
+.fontBall{
+  font-family: '方正苏新诗柳楷简体';
+  font-style: normal;
+  font-weight: 170;
+  font-size: 24px;
+  line-height: 25px;
+}
+
 .user{
   position: absolute;
   margin:0 auto;

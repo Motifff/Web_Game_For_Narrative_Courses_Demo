@@ -1,14 +1,61 @@
 .matchPos1{
     position: absolute;
-    left: 26.11%;
-    right: 60.74%;
-    top: 14.45%;
-    bottom: 14.13%;
+    width:168.13px;
+    height:513.5px;
+    left:333.98px ;
+    top:103.89px ;
 } 
 .matchPos2{
     position: absolute;
-    left: 60.13%;
-    right: 26.72%;
-    top: 14.45%;
-    bottom: 14.13%;
+    width:168.13px;
+    height:513.5px;
+    left: 769.13px;
+    top: 103.89px;
+
 } 
+.matchPos3{
+    position: absolute;
+    width:159.11px;
+    height:165.58px;
+    left: 44.1%;
+    right: 43.62%;
+    top: 54.2%;
+    bottom: 22.78%;
+
+} 
+.wordPos1{
+    position: absolute;
+    font-family: '方正聚珍新仿简体';
+    font-size: 32px;
+    left: 28.35%;
+    top: 14.5%;
+    color: aliceblue;
+}
+.wordPos2{
+    position: absolute;
+    font-family: '方正聚珍新仿简体';
+    font-size: 32px;
+    left: 62.37%;
+    top: 14.5%;
+    color: aliceblue;
+}
+.wordPos3{
+    position: absolute;
+    font-family: '方正聚珍新仿简体';
+    font-size: 28px;
+    width:36px;
+    left: 49%;
+    top: 21%;
+    color: aliceblue;
+}
+.buttonEnter{
+    position: absolute;
+    width:120.11px;
+    height:125.58px;
+    left: 45.1%;
+    top: 54.2%;
+    border: none !important;
+    filter:Alpha(opacity=0.3);
+    -moz-opacity:0.3;
+    opacity:0.1;
+}

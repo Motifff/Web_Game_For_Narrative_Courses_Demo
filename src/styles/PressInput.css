@@ -37,8 +37,6 @@ body{
   left: 980px;
   top: 510px;
   background-image: url("../assets/2.png");
-  
-
 }
 .button1{
     position: absolute;
@@ -125,8 +123,8 @@ body{
   font-family: '方正聚珍新仿简体';
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
+  font-size: 22px;
+  line-height: 28px;
   text-align: center;
 
   color: #000000;
@@ -135,85 +133,85 @@ body{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 361px;
-  top: 68px;
+  left: 10.3%;
+  top: 9.5%;
 }
 .poem2{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 463px;
-  top: 68px;
+  left: 20.07%;
+  top: 9.5%;;
 }
 .poem3{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 565px;
-  top: 68px;
+  left: 29.84%;
+  top: 9.5%;
 }
 .poem4{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 667px;
-  top: 68px;
+  left: 39.61%;
+  top: 9.5%;
 }
 .poem5{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 768px;
-  top: 68px;
+  left: 49.38%;
+  top: 9.5%;
 }
 .poem6{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 868px;
-  top: 68px;
+  left: 59.15%;
+  top: 9.5%;
 }
 .poem7{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 284px;
-  top: 378px;  
+  left: 10.3%;
+  top: 56%;
 }
 .poem8{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 393px;
-  top: 378px;  
+  left: 20.07%;
+  top: 56%; 
 }
 .poem9{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 488px;
-  top: 378px;
+  left: 29.84%;
+  top: 56%;
 }
 .poem10{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 588px;
-  top: 378px;  
+  left: 39.61%;
+  top: 56%;
 }
 .poem11{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 690px;
-  top: 378px;
+  left: 49.38%;
+  top: 56%;
 }
 .poem12{
   position: absolute;
   width: 35px;
   height: 268px;
-  left: 791px;
-  top: 378px;  
+  left: 59.15%;
+  top: 56%;
 }
 .new1{
   position: absolute;
@@ -272,6 +270,14 @@ body{
 
   left: 150px;
   top: 140px; 
+}
+
+.buttonPos4{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 1170px;
+  top: 34px; 
 }
 
 .buttonP1{

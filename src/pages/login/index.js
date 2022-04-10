@@ -5,23 +5,17 @@ import "../../styles/index.css"
 
 import upside from "../../assets/up2.png"
 import background1 from "../../assets/0.png"
+import background2 from "../../assets/back2.png"
 import button1 from "../../assets/4.png"
 import button2 from "../../assets/3.png"
 
 
-import card1 from "../../assets/c1.png"
-import card2 from "../../assets/c2.png"
-import card3 from "../../assets/c3.png"
-import card4 from "../../assets/c4.png"
-import card5 from "../../assets/c5.png"
-import card6 from "../../assets/c6.png"
-import card7 from "../../assets/c7.png"
-import card8 from "../../assets/c8.png"
-import card9 from "../../assets/c9.png"
-import card10 from "../../assets/c10.png"
-import card11 from "../../assets/c11.png"
-import card12 from "../../assets/c12.png"
+import card0 from "../../assets/c0.png"
+import button4 from "../../assets/match2.png"
 
+import ball from "../../assets/ballBack.png"
+import rightTag from "../../assets/rightTag.png"
+import wordA from "../../assets/wordA.png"
 
 class SelectPage extends React.Component{
 
@@ -75,19 +69,46 @@ class SelectPage extends React.Component{
   cards(){
     return(
       <div>
-        <img className = 'c1' src={card1}/>
-        <img className = 'c2' src={card2}/>
-        <img className = 'c3' src={card3}/>
-        <img className = 'c4' src={card4}/>
-        <img className = 'c5' src={card5}/>
-        <img className = 'c6' src={card6}/>
-        <img className = 'c7' src={card7}/>
-        <img className = 'c8' src={card8}/>
-        <img className = 'c9' src={card9}/>
-        <img className = 'c10' src={card10}/>
-        <img className = 'c11' src={card11}/>
-        <img className = 'c12' src={card12}/>
+        <img className = 'c1' src={card0}/>
+        <img className = 'b1' src={ball}/>
+        <img className = 'c2' src={card0}/>
+        <img className = 'b2' src={ball}/>
+        <img className = 'c3' src={card0}/>
+        <img className = 'b3' src={ball}/>
+        <img className = 'c4' src={card0}/>
+        <img className = 'b4' src={ball}/>
+        <img className = 'c5' src={card0}/>
+        <img className = 'b5' src={ball}/>
+        <img className = 'c6' src={card0}/>
+        <img className = 'b6' src={ball}/>
+        <img className = 'c7' src={card0}/>
+        <img className = 'b7' src={ball}/>
+        <img className = 'c8' src={card0}/>
+        <img className = 'b8' src={ball}/>
+        <img className = 'c9' src={card0}/>
+        <img className = 'b9' src={ball}/>
+        <img className = 'c10' src={card0}/>
+        <img className = 'b10' src={ball}/>
+        <img className = 'c11' src={card0}/>
+        <img className = 'b11' src={ball}/>
+        <img className = 'c12' src={card0}/>
+        <img className = 'b12' src={ball}/>
+        <div className="fontBall">
+          <p className="d1">1</p>
+          <p className="d2">2</p>
+          <p className="d3">3</p>
+          <p className="d4">4</p>
+          <p className="d5">5</p>
+          <p className="d6">6</p>
+          <p className="d7">7</p>
+          <p className="d8">8</p>
+          <p className="d9">9</p>
+          <p className="d10">10</p>
+          <p className="d11">11</p>
+          <p className="d12">12</p>
+        </div>
       </div>
+
     )
   }
 
@@ -96,12 +117,15 @@ class SelectPage extends React.Component{
       return(
           <div className="app">
             <div style={{height:720,width:1280,backgroundImage:`url(${background1})`}}></div>
+            <img className = 'back2' src={background2}/>
             {this.cards()}
+            <img className = 'button4' src={button4}/>
+            <img className = 'rightTag' src={rightTag}/>
+            <img className = 'wordA' src={wordA}/>
             
-            
-            <img className = 'up1' src={upside}/>
+            {/*<img className = 'up1' src={upside}/>
             <img className = 'button1' src={button1}/>
-            <img className = 'button2' src={button2}/>
+            <img className = 'button2' src={button2}/>*/}
             
             
           </div>
