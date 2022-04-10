@@ -9,12 +9,14 @@ import reportWebVitals from './reportWebVitals';
 //import PressInput from './pages/login/pressInput.js';
 
 import Loading from './pages/login/Loadingpage.js';
-//import Result from './pages/main-page/result';
+//import Result from './pages/main-page/result.js';
+
+import Match from './pages/login/matching.js';
 
 ReactDOM.render(
   
     <body>
-      <Loading/>
+      <Match/>
      
     </body>
   
