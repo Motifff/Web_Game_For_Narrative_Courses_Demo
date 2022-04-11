@@ -1,11 +1,13 @@
+
 .card {
+    font-family:serif;
     position: relative;
     background-color: black;
 }
 
 .cardText {
     width:16px;
-    font-family: '方正苏新诗柳楷简体';
+    font-family:FZJZ;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -13,6 +15,7 @@
     text-align: center;
     color: #000000;
 }
+
 .container{
     position: absolute;
     left: 253px;

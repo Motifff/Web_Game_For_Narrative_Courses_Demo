@@ -8,7 +8,7 @@ class CardHolder extends React.Component{
     constructor(props){
         super(props)
     }
-
+    
     render(){
         const listRender = this.props.word.map(
             (item,key)=>{

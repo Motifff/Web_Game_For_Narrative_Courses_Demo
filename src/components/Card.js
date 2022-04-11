@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import { useSpring, animated ,config} from "@react-spring/web";
 import cardStyle from '../styles/card.module.css'
+import '../index.css'
 
 let scale = 1.3;
 //单张卡片组件

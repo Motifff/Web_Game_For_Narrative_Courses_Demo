@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import CardHolder from '../../components/CardHolder';
 import DetectZone from '../../components/DetectZone';
 import axios from 'axios';
@@ -34,11 +34,23 @@ class InGame extends React.Component{
             //这是哪一组
             Which:2,
             //这是哪一个
+            state:'wait'
         }
     }
     
     componentDidMount() {
         this.initFromServer()
+        this.timer = setInterval(() => {
+            if(this.state==='gaming'){
+                this.update()
+            }
+        }, 50);
+    }
+
+    componentWillUnmount(){
+        if( this.timer!== null) {
+            clearInterval(this.timer);
+        }
     }
 
     async initFromServer (){
@@ -46,7 +58,8 @@ class InGame extends React.Component{
         .then( 
             res => {
                 this .setState({
-                    word:res.data.words
+                    word:res.data.words,
+                    state:res.data.state,
                 }, () => console .log(this.state.word))
                 console .log(res)
             })
@@ -59,6 +72,7 @@ class InGame extends React.Component{
             res => {
                 this .setState({
                     word:res.data.words,
+                    image:this.state.image,
                     isHighlight:res.data.isHighLight,
                     Order:res.data.order,
                     Which:res.data.witch,
@@ -70,15 +84,12 @@ class InGame extends React.Component{
 
     async movement(order,which,mode){
         let pics = this.state.image
-        if(mode === 'del'){
-            pics[order].splice(which,1)
-        }
         axios.get('http://127.0.0.1:8000/inGame/move/?num='+order+'&pos='+which+'&mode='+mode)
         .then( 
             res => {
                 this .setState({
                     word:res.data.words,
-                    image:pics,
+                    image:this.state.image,
                     isHighlight:res.data.isHighLight,
                     Order:res.data.order,
                     Which:res.data.which,
@@ -93,10 +104,17 @@ class InGame extends React.Component{
     }
 
     destroy = async(myName,num) =>{
-        let edit = this.state.word[num]
-        let pics = this.state.image
-        pics[num].splice(edit[num].indexOf(myName),1)
-        this.movement(num,edit.indexOf(myName),'del')
+        let edit = this.state.word
+        let ord = edit[num].indexOf(myName)
+        edit[num].splice(ord,1)
+        this.setState({
+            word:edit,
+            image:this.state.image,
+            isHighlight:this.state.isHighLight,
+            Order:this.state.Order,
+            Which:this.state.Which,
+        })
+        this.movement(num,ord,'del')
     }
 
     render(){
