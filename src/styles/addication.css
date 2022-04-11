@@ -1,0 +1,33 @@
+.backNew1{
+    width: 1280;
+    height:720;
+}
+.card1{
+    position: absolute;
+    left: 4.24%;
+    right: 88.9%;
+    top: 25.31%;
+    bottom: 37.42%;
+}
+.backNew2{
+    position: absolute;
+    left: 13.47%;
+    right: 12.88%;
+    top: 23.8%;
+    bottom: 33.21%;
+}
+
+.player1{
+    position: absolute;
+    left: 89.29%;
+    right: 3.82%;
+    top: 52.55%;
+    bottom: 41.33%;
+}
+.player2{
+    position: absolute;
+    left: 91.87%;
+    right: 1.24%;
+    top: 0%;
+    bottom: 93.96%;
+}

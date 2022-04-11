@@ -34,7 +34,7 @@ function Card(props){
 
   //from是动画开始的常数， to是动画开始常数
   const textSize = useSpring({
-    from:{
+    from:{//这里改了字的位置是相对页面的绝对位置
       width:focus?'32px':'16px',
       fontSize:focus?'28px':'14px',
       lineHeight: focus?'32px':'16px',
@@ -83,6 +83,7 @@ function Card(props){
   //start to render here
   return(
     <div className={cardStyle.Card}>
+      
       <animated.div
         style={{
           backgroundColor:'#46e891',
@@ -100,6 +101,7 @@ function Card(props){
           style={{
             zIndex:1,
             position:'absolute',
+            fontFamily:'FZJZ',
             ...textSize
           }}
         >

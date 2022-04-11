@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../../components/Card";
 import '../../styles/win.css'
-//import * as Scroll from 'react-scroll';
+import * as Scroll from 'react-scroll';
 
 import backPic from "../../assets/winPic/back1.png";
 import wining from "../../assets/winPic/winStat.png"
