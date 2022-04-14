@@ -3,13 +3,16 @@ import ReactDOM from 'react-dom'
 import "../../styles/result.css"
 //import * as Scroll from 'react-scroll';
 
-import backPic from "../../assets/main-page/back1.png";
+import backPic from "../../assets/main-page/112.png";
 import wining from "../../assets/main-page/1.png"
 import backBlur from "../../assets/main-page/backblur.png"
 import figure from "../../assets/main-page/lase.png"
 import resultBack from "../../assets/main-page/resultBack.jpg"
 import resultBack1 from "../../assets/main-page/resultBack1.jpg"
 import resultWord from "../../assets/main-page/resultWord.png"
+import pageNew1 from "../../assets/main-page/page1.png"
+
+import card0 from "../../assets/c0.png"
 
 import card1 from "../../assets/main-page/c1.png"
 import card2 from "../../assets/main-page/c2.png"
@@ -23,6 +26,8 @@ import card9 from "../../assets/main-page/c9.png"
 import card10 from "../../assets/main-page/c10.png"
 import card11 from "../../assets/main-page/c11.png"
 import card12 from "../../assets/main-page/c12.png"
+
+import win1 from "../../assets/main-page/win.png"
 
 class Win extends React.Component{
     state={
@@ -39,7 +44,8 @@ class Win extends React.Component{
         {id: 10,content:'滚滚长江东似水10'},
         {id: 11,content:'滚滚长江东似水11'},
         {id: 12,content:'滚滚长江东似水12'},
-      ]
+      ],
+      judge:false,
     }
 
     /*handleScroll=(e)=>{
@@ -78,6 +84,33 @@ class Win extends React.Component{
       )
     }*/
 
+    clickEvent=()=>{
+      this.setState({
+        judge:true,
+      })
+    }
+
+    judgement(){
+      return this.state.judge === true
+                   //点击进入弹窗之后的组件
+                  ?(<div>
+                     
+                  </div>)
+                  :(<div>
+
+                  </div>)
+    }
+
+    showImg(){
+      return(
+        <div className="card0">
+              <img src={card0} className="page1"/>
+              <p className="resultPoem">两个黄鹂鸣翠柳</p>
+              <button onClick={null} className=""></button>
+        </div>
+      )
+    }
+
     scroll(){
       /*const container={
         position: 'absolute',
@@ -106,21 +139,23 @@ class Win extends React.Component{
       }*/
       return(
         <div className="container" onWheel={this.yWheel}>
-            <img src={card1} className="page1"/>
-            <img src={card2} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card12} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card10} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card1} className="page1"/>
-            <img src={card7} className="page1"/>
-            <img src={card1} className="page1"/>
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+            {this.showImg()}
+           
         </div>
       
       )
@@ -149,13 +184,13 @@ class Win extends React.Component{
          <div>
            <img className = 'backBlur' src={backBlur}/>
            <img className = 'figure' src={figure}/>
-           <img className = 'win1' src={wining}/>
-
-           <div>
+           
+           <img className = 'pageNew1' src={pageNew1}/>
+           {/*<div>
              <img className = 'resultBack' src={resultBack}/>
              <img className = 'resultBack1' src={resultBack1}/>
              <img className = 'resultWord' src={resultWord}/>
-           </div>
+           </div>*/}
            
            {/*<Table scroll={{ x: 1200}}/>*/}
            {/*<div onWheel={(e) => this.handleScroll(e)}>内容</div>*/}
@@ -172,6 +207,7 @@ class Win extends React.Component{
                
                <div style={{height:720,width:1280,backgroundImage:`url(${backPic})`}}></div> 
                {this.static()}
+               <img className="win" src={win1}></img>
                {this.scroll()}
                
             </div>
