@@ -57,6 +57,10 @@ function Card(props){
     }
   })
 
+  const DragStart = () =>{
+    props.showZone()
+    setDragging(!dragging)
+  }
   let area = 300
   //很简答就是在在结束后元件自杀
   const elimSelf = (e) =>{
@@ -69,14 +73,17 @@ function Card(props){
         setDragging(!dragging)
       }
     }
+    props.closeZone()
   }
   //这里是一个预留的方法用于告诉 cardHolder 我正在被玩家注视 这些需要告诉服务器，来高亮对方的选择
   const markSelf = () =>{
     props.mark(props.w,props.num)
     setFocus(!focus)
+    console.log(props.border)
   }
   //与以上相反
   const demark = () => {
+    props.demark(props.w,props.num)
     setFocus(!focus)
   }
   
@@ -94,19 +101,22 @@ function Card(props){
         draggable = {props.canDrag}
         onMouseOver={() => markSelf()}
         onMouseOut={() => demark()}
-        onDragStart = {() => setDragging(!dragging)}
+        onDragStart = {() => DragStart()}
         onDragEnd = {(e) => elimSelf(e)}
       >
-        <animated.div
-          style={{
-            zIndex:1,
-            position:'absolute',
-            fontFamily:'FZJZ',
-            ...textSize
-          }}
-        >
-          {props.w}
-        </animated.div>
+        <div style={{zIndex:1}}>
+          <animated.div
+            style={{
+              position:'absolute',
+              marginTop:40,
+              marginLeft:40,
+              fontFamily:'FZJZ',
+              ...textSize
+            }}
+          >
+            {props.w}
+          </animated.div>
+        </div>
         <animated.div
           style={{
             ...size,

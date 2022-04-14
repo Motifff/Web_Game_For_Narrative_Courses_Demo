@@ -3,17 +3,16 @@ import {animated ,useSpring} from '@react-spring/web'
 
 
 function DetectZone(props){
-    const [trig,setTrig] = useState(false);
     const styles = useSpring({
         from:{
-            border:trig?'0px dashed #000000':'6px dashed #000000',
-            background:trig?'rgba(196,196,196,0)':'rgba(196,196,196,0.5)',
-            opacity:trig?0:1
+            border:props.m?'0px dashed #000000':'6px dashed #000000',
+            background:props.m?'rgba(196,196,196,0)':'rgba(196,196,196,0.5)',
+            opacity:props.m?0:1
         },
         to:{
-            border:trig?'6px dashed #000000':'0px dashed #000000',
-            background:trig?'rgba(196,196,196,0.5)':'rgba(196,196,196,0)',
-            opacity:trig?1:0
+            border:props.m?'6px dashed #000000':'0px dashed #000000',
+            background:props.m?'rgba(196,196,196,0.5)':'rgba(196,196,196,0)',
+            opacity:props.m?1:0
         }
     })
 
@@ -26,8 +25,6 @@ function DetectZone(props){
                 alignItems:'center',
         }}>
             <animated.div
-                onDragOver={()=>setTrig(true)}
-                onMouseOut={()=>setTrig(false)}
                 style={{
                     width:props.w,
                     height:props.h,
