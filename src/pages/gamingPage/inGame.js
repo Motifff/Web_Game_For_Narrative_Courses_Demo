@@ -75,13 +75,13 @@ class InGame extends React.Component{
                     State:res.data.state,
                     Task:res.data.task,
                     Zone : this.state.Zone,
-                }, () => console .log(this.state.word))
+                }, () => console .log(res))
             })
         .catch( err => console .log( "Couldn't fetch data. Error: " + err))
     }
 
     async update(){
-        if(this.state.State==='gaming'){
+        if(true){
             axios.get( 'http://'+server+'/inGame/getStat')
             .then( 
                 res => {
@@ -94,7 +94,7 @@ class InGame extends React.Component{
                         State:res.data.state,
                         Task:res.data.task,
                         Zone : this.state.Zone,
-                    }, () => console .log(this.state))
+                    }, () => console .log(res))
                 })
             .catch( err => console .log( "Couldn't fetch data. Error: " + err))
         }
