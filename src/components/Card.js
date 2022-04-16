@@ -93,7 +93,7 @@ function Card(props){
       
       <animated.div
         style={{
-          backgroundColor:'#46e891',
+          backgroundColor:'fffde8',
           marginLeft:life ? 10 : 0,
           marginRight:life ? 10 : 0,
           ...size

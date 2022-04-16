@@ -5,7 +5,7 @@ import axios from 'axios';
 
 import backStyle from '../../styles/ingamebackLayout.module.css'
 
-import c1 from '../../assets/cardPic/c1.png'
+import c0 from '../../assets/cardPic/c0.png'
 import c2 from '../../assets/cardPic/c2.png'
 import c3 from '../../assets/cardPic/c3.png'
 import c4 from '../../assets/cardPic/c4.png'
@@ -35,8 +35,8 @@ class InGame extends React.Component{
                 ['测试1','测试2','测试3','测试4','测试5','测试6','测试7','测试8','测试9','测试10','测试11','测试12']
             ],
             image:[
-                [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12],
-                [c1,c2,c3,c4,c5,c6,c7,c8,c9,c10,c11,c12]
+                [c0,c0,c0,c0,c0,c0,c0,c0,c0,c0,c0,c0],
+                [c0,c0,c0,c0,c0,c0,c0,c0,c0,c0,c0,c0]
             ],
             isHighLight:false,
             Order:0,
