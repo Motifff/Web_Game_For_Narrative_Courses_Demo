@@ -178,7 +178,7 @@ class InGame extends React.Component{
                     <img className={backStyle.player1} src={player1}></img>
                     <img className={backStyle.player2} src={player2}></img>
                     <div width='100vw' height='100vh' style={{display:'flex',flexDirection:'column'}}>
-                        <div style={{height:'30vh',display:'flex',alignItems:'start',justifyContent: 'center'}}>
+                        <div style={{height:'40vh',display:'flex',alignItems:'start',justifyContent: 'center'}}>
                             <CardHolder   
                                 num = {0}
                                 word={this.state.word[0]} 
