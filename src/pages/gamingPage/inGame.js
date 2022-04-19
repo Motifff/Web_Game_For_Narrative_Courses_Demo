@@ -63,7 +63,11 @@ class InGame extends React.Component{
     }
 
     async initFromServer (){
-        axios.get( 'http://'+server+'/inGame/init')
+        axios.get( 'http://'+server+'/inGame/init',{
+            headers: {
+            'Access-Control-Allow-Origin': '*',
+          }}
+        )
         .then( 
             res => {
                 this .setState({
@@ -82,7 +86,10 @@ class InGame extends React.Component{
 
     async update(){
         if(true){
-            axios.get( 'http://'+server+'/inGame/getStat')
+            axios.get( 'http://'+server+'/inGame/getStat',{
+                headers: {
+                'Access-Control-Allow-Origin': '*',
+              }})
             .then( 
                 res => {
                     this .setState({
@@ -103,7 +110,11 @@ class InGame extends React.Component{
 
     async movement(order,which,mode){
         let pics = this.state.image
-        axios.get('http://'+server+'/inGame/move/?num='+order+'&pos='+which+'&mode='+mode)
+        axios.get('http://'+server+'/inGame/move/?num='+order+'&pos='+which+'&mode='+mode,{
+            headers: {
+            'Access-Control-Allow-Origin': '*',
+          }}
+        )
         .then( 
             res => {
                 this .setState({
